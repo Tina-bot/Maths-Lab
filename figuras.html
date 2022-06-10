@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/79775deb8f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <title>•Figuras |Maths</title>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa-solid fa-dice-d6"></i>Figuras Geometricas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="figuras.html">Figuras</a></li>
+                <li><a href="descuento.html">Calculadora</a></li>
+                <li><a href="promedio.html">Promedio</a></li>
+                <li><a href="salarios.html">Salarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="title-area">
+            <h2>
+                Calcula el area y perimetro <i class="fa-solid fa-chart-column"></i></i>
+            </h2>
+        </div>
+        <div class="calculationArea">
+            <div class="cuadrado">
+                <h3>Cuadrado</h3>
+                <form action="">
+                    <label for="inputCuadrado">
+                        Lado
+                    </label>
+                    <input type="number" name="lado" id="inputCuadrado">
+                    <div class="buttons">
+                        <button type="button" onclick="calcularPerimetro()"> Calcular perimetro </button>
+                        <button type="button" onclick="calcularArea()"> Calcular area </button>
+                    </div>
+                    <h2>Resultado</h2>
+                    <textarea type="text" name="resultado" id="resultadoCuadrado" cols="30" rows="10"></textarea>
+            </div>
+            </form>
+            <div class="triangulo">
+                <h3>Triangulo</h3>
+                <form action="">
+                    <label for="inputTriangulo">
+                        Base
+                    </label>
+                    <input type="number" name="base" id="inputTrianguloBase">
+                    <label for="inputTriangulo">
+                        Altura
+                    </label>
+                    <input type="number" name="altura" id="inputTrianguloAltura">
+                    <label for="inputTriangulo">
+                        Lado 1
+                    </label>
+                    <input type="number" name="lado1" id="inputTrianguloLado1">
+                    <label for="inputTriangulo">
+                        Lado 2
+                    </label>
+                    <input type="number" name="lado2" id="inputTrianguloLado2">
+
+                    <div class="buttons">
+
+                        <button type="button" onclick="calcularPerimetroTriangulo()"> Calcular perimetro </button>
+                        <button type="button" onclick="calcularAreaTriangulo()"> Calcular area </button>
+                    </div>
+                    <h2>Resultado</h2>
+                    <textarea type="text" name="resultado" id="resultadoTriangulo" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+
+            <div class="circulo">
+                <h3>Circulo</h3>
+                <form action="">
+                    <label for="inputCirculo">
+                        Diametro
+                    </label>
+                    <input type="number" name="diametro" id="inputCirculoDiametro">
+                    <label for="inputCirculo">
+                        Circunferencia
+                    </label>
+                    <input type="number" name="circunferencia" id="inputCirculoCircunferencia">
+                    <label for="inputCirculo">
+                        Radio
+                    </label>
+                    <input type="number" name="radio" id="inputCirculoRadio">
+                    <div class="buttons">
+                        <button type="button" onclick="calcularDiametroCirculo()"> Calcular diametro </button>
+                        <button type="button" onclick="calcularCircunferenciaCirculo()"> Calcular circunferencia
+                        </button>
+                        <button type="button" onclick="calcularRadioCirculo()"> Calcular radio </button>
+                    </div>
+                    <h2>Resultado</h2>
+                    <textarea type="text" name="resultado" id="resultadoCirculo" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+    </section>
+
+    <script src="assets/js/figuras.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/79775deb8f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+
+    <title>•Salarios |Maths</title>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa-solid fa-dice-d6"></i>Analizar Salarios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="figuras.html">Figuras</a></li>
+                <li><a href="descuento.html">Calculadora</a></li>
+                <li><a href="promedio.html">Promedio</a></li>
+                <li class="active"><a href="salarios.html">Salarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="title-area">
+            <h2>
+                Calcular y Analizar Salarios <i class="fa-solid fa-chart-column"></i></i>
+            </h2>
+        </div>
+        <div class="calculation-promedio-container">
+            <div class="calculation-promedio">
+                <h3>Calcular salarios</h3>
+                <form action="">
+                    <label for="InputNombre">Empleado</label>
+                    <input type="text" name="InputNombre" id="InputNombre" placeholder="Ingrese nombre">
+                    <label for="InputSalario">Salario</label>
+                    <input type="number" name="InputSalario" id="InputSalario" placeholder="Ingrese salario">
+
+                    <button type="button" onClick="updateList()">Update</button>
+                    <button type="button" onclick="calcularSalario()" class="btn-calcular">Calcular</button>
+                </form>
+            </div>
+            <div class="calculation-analysis-results">
+                <h3>Resultados y análisis de salarios</h3>
+                <div class="calculation-analysis-results-container">
+                    <div class="calculation-analysis-results-container-item">
+                        <h4>Promedio</h4>
+                        <p id="resultPromedio">12256</p>
+                    </div>
+                    <div class="calculation-analysis-results-container-item">
+                        <h4>Media</h4>
+                        <p id="resultMediana">878979</p>
+                    </div>
+                    <div class="calculation-analysis-results-container-item">
+                        <h4>Moda</h4>
+                        <p id="resultModa">321312</p>
+                    </div>
+                    <div class="calculation-analysis-results-container-item">
+                        <h4>Desviación Estandar</h4>
+                        <p id="desviacionEstandar">121212</p>
+                    </div>
+                    <div class="calculation-analysis-results-container-item">
+                        <h4>Maximo</h4>
+                        <p id="salarioMaximo">2323</p>
+                    </div>
+                    <div class="calculation-analysis-results-container-item">
+                        <h4>Minimo</h4>
+                        <p id="salarioMinimo">1</p>
+                    </div>
+                    <div class="calculation-analysis-results-container-item">
+                        <h4>Total</h4>
+                        <p id="resultSumaTotal">124324234</p>
+                    </div>
+                    <div class="calculation-analysis-results-container-item">
+                        <h4>Lista de empleados</h4>
+                        <div class="listaEmpleados" id="listaEmpleados">
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <script src="assets/js/salarios.js"></script>
+    <script src="assets/js/analisis.js"></script>
+</body>
+
+</html>

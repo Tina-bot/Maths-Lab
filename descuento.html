@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/79775deb8f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <title>•Descuentos| Maths</title>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa-solid fa-dice-d6"></i>Calculadora Descuentos</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="figuras.html">Figuras</a></li>
+                <li class="active"><a href="descuento.html">Calculadora</a></li>
+                <li><a href="promedio.html">Promedio</a></li>
+                <li><a href="salarios.html">Salarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="title-area">
+            <h2>
+                Calcular porcentajes y descuentos <i class="fa-solid fa-chart-column"></i></i>
+            </h2>
+        </div>
+
+        <div class="porcentajes-descuentos-container"> 
+            <div class="porcentajes-form">
+                <h3>Precio con descuento</h3>
+                <form action="">
+                    <label for="InputPrice">Precio <i class="fa-solid fa-comment-dollar"></i></label>
+                    <input type="number" name="precio" id="InputPrice">
+                    <label for="InputDiscount">Descuento <i class="fa-solid fa-percent"></i></i></label>
+                    <input type="number" name="descuento" id="InputDiscount">
+                    <button type="button" onclick="onClickButtonPriceDiscount()">Calcular</button>
+                    <h2>Resultado</h2>
+                    <textarea type="text" name="resultado" id="result" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/descuento.js"></script>
+</body>
+
+</html>
